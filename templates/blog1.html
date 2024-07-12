@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Блог</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link {% if active_page == 'index' %}active{% endif %}" aria-current="page" href="/">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if active_page == 'blog' %}active{% endif %}" href="/blog">Блог</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if active_page == 'contacts' %}active{% endif %}" href="/contacts">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 class="mt-5">Добро пожаловать в наш блог!</h1>
+        <p>Здесь вы найдете последние новости и статьи о наших проектах.</p>
+    </div>
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Ф. Тютчев о весне
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              Еще в полях белеет снег,<br>
+              А воды уж весной шумят —<br>
+              Бегут и будят сонный брег,<br>
+              Бегут, и блещут, и гласят…
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                С. Есенин о осени
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              Отговорила роща золотая<br>
+              Березовым, веселым языком,<br>
+              И журавли, печально пролетая,<br>
+              Уж не жалеют больше ни о ком.
+
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Ф. Тютчев о зиме
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              Чародейкою Зимою<br>
+              Околдован, лес стоит —<br>
+              И под снежной бахромою,<br>
+              Неподвижною, немою,<br>
+              Чудной жизнью он блестит.<br>
+              И стоит он, околдован,—<br>
+              Не мертвец и не живой —<br>
+              Сном волшебным очарован,<br>
+              Весь опутан, весь окован<br>
+              Лёгкой цепью пуховой...<br>
+              Солнце зимнее ли мещет<br>
+              На него свой луч косой —<br>
+              В нём ничто не затрепещет,<br>
+              Он весь вспыхнет и заблещет<br>
+              Ослепительной красой.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
