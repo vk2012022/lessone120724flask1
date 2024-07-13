@@ -1,7 +1,15 @@
 body {
-    padding-top: 56px;
+    padding-top: 5px;
 }
 
 .container {
     margin-top: 20px;
+}
+
+.navbar-brand {
+    color: #007bff !important; /* Основной цвет ссылки */
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+    color: #28a745 !important; /* Цвет ссылки при наведении */
 }
